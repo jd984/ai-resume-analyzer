@@ -92,7 +92,7 @@ const Upload = () => {
 
     console.log(data);
 
-    // navigate(`/resume/${uuid}`);
+    navigate(`/resume/${uuid}`);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {

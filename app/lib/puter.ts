@@ -360,6 +360,8 @@ export const usePuterStore = create<PuterStore>((set, get) => {
 
     for (const model of models) {
       try {
+        console.log("Inside model name", model);
+
         const response = (await puter.ai.chat(payload, { model })) as
           | AIResponse
           | undefined;
